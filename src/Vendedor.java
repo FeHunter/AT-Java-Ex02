@@ -19,4 +19,9 @@ public class Vendedor extends Colaborador {
     public void ExibirInformacoes() {
         System.out.println("Identificação: " + getIdentificacao() + "\nNome: " + getNome() + "\nTelefone: " + getTelefone() + "\nSalário: " + getSalario() + "\nComissão: " + getComissao());
     }
+
+    @Override
+    public double CalcularSalario() {
+        return getSalario() + comissao;
+    }
 }

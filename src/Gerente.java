@@ -19,4 +19,9 @@ public class Gerente extends Colaborador {
     public void ExibirInformacoes() {
         System.out.println("Identificação: " + getIdentificacao() + "\nNome: " + getNome() + "\nTelefone: " + getTelefone() + "\nSalário: " + getSalario() + "\nComissão: " + getBonus());
     }
+
+    @Override
+    public double CalcularSalario() {
+        return getSalario() + bonus;
+    }
 }

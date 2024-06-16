@@ -42,4 +42,5 @@ public abstract class Colaborador {
     }
 
     public abstract void ExibirInformacoes ();
+    public abstract double CalcularSalario ();
 }

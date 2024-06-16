@@ -7,4 +7,9 @@ public class Funcionario extends Colaborador{
     public void ExibirInformacoes() {
         System.out.println("Identificação: " + getIdentificacao() + "\nNome: " + getNome() + "\nTelefone: " + getTelefone() + "\nSalário: " + getSalario());
     }
+
+    @Override
+    public double CalcularSalario() {
+        return getSalario();
+    }
 }
