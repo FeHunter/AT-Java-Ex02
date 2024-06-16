@@ -17,7 +17,7 @@ public class Vendedor extends Colaborador {
 
     @Override
     public void ExibirInformacoes() {
-        System.out.println("Identificação: " + getIdentificacao() + "\nNome: " + getNome() + "\nTelefone: " + getTelefone() + "\nSalário: " + getSalario() + "\nComissão: " + getComissao());
+        System.out.println("\nIdentificação: " + getIdentificacao() + "\nNome: " + getNome() + "\nTelefone: " + getTelefone() + "\nSalário: " + getSalario() + "\nComissão: " + getComissao() + "\nSalário Final: " + CalcularSalario());
     }
 
     @Override
