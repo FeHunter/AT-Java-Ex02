@@ -34,6 +34,8 @@ public abstract class Colaborador {
         this.salario = salario;
     }
 
+    public Colaborador (){
+    }
     public Colaborador (int identificacao, String nome, String telefone, double salario){
         this.identificacao = identificacao;
         this.nome = nome;

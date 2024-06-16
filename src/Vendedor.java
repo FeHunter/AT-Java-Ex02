@@ -10,6 +10,7 @@ public class Vendedor extends Colaborador {
         this.comissao = comissao;
     }
 
+    public Vendedor () { }
     public Vendedor(int identificacao, String nome, String telefone, double salario, double comissao) {
         super(identificacao, nome, telefone, salario);
         this.comissao = comissao;
@@ -17,7 +18,8 @@ public class Vendedor extends Colaborador {
 
     @Override
     public void ExibirInformacoes() {
-        System.out.println("\nIdentificação: " + getIdentificacao() + "\nNome: " + getNome() + "\nTelefone: " + getTelefone() + "\nSalário: " + getSalario() + "\nComissão: " + getComissao() + "\nSalário Final: " + CalcularSalario());
+        System.out.println("\nIdentificação: " + getIdentificacao() + "\nNome: " + getNome() + "\nTelefone: "
+                + getTelefone() + "\nSalário: " + getSalario() + "\nComissão: " + getComissao() + "\nSalário Final: " + CalcularSalario());
     }
 
     @Override
